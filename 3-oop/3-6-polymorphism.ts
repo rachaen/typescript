@@ -1,4 +1,6 @@
 {
+  // 다형성을 이용하면 한가지의 class나 interface를 통해서 다른 방식으로 구현한 class를 만들 수 있다.
+
   type CoffeeCup = {
     shots: number;
     hasMilk?: boolean;
@@ -94,7 +96,9 @@
     new CaffeLatteMachine(16, '1'),
     new SweetCoffeeMaker(16),
   ];
-  machines.forEach(machine => {
+
+  // 다형성의 장점: 내부적으로 구현된 다양한 class들이 한 가지 interface를 구현하거나 동일한 class를 상속했을 때 동일한 함수를 어떤 클래스인지 구분하지 않고 공통된 api를 호출할 수 있다
+  machines.forEach((machine) => {
     console.log('-------------------------');
     machine.makeCoffee(1);
   });

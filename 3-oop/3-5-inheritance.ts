@@ -8,6 +8,8 @@
     makeCoffee(shots: number): CoffeeCup;
   }
 
+  // interface : implements, class: extends
+
   class CoffeeMachine implements CoffeeMaker {
     private static BEANS_GRAMM_PER_SHOT: number = 7; // class level
     private coffeeBeans: number = 0; // instance (object) level

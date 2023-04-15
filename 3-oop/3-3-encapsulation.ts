@@ -4,9 +4,10 @@
     hasMilk: boolean;
   };
 
-  // public
-  // private
-  // protected
+  // 정보를 은닉할 수 있는 방법
+  // public: default. 공개
+  // private: 외부에서 볼 수 없고 접근할 수 없음
+  // protected: 클래스를 상속한 자식 클래스에서 접근 가능
   class CoffeeMaker {
     private static BEANS_GRAMM_PER_SHOT: number = 7; // class level
     private coffeeBeans: number = 0; // instance (object) level
@@ -41,6 +42,8 @@
   const maker = CoffeeMaker.makeMachine(32);
   maker.fillCoffeeBeans(32);
 
+  // Setter, Getter
+  // 일반 멤버변수처럼 사용이 가능하지만 어떠한 계산을 해야할 때 유용하게 사용할 수 있다.
   class User {
     get fullName(): string {
       return `${this.firstName} ${this.lastName}`;
@@ -54,6 +57,8 @@
       }
       this.internalAge = num;
     }
+
+    // 생성자에 접근제어자 즉, private를 설정해주면 바로 멤버변수로 설정이 된다.
     constructor(private firstName: string, public lastName: string) {}
   }
   const user = new User('Steve', 'Jobs');
