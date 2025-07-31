@@ -1,3 +1,4 @@
+// constrains를 통해 제네릭에 조건을 줄 수 있음
 interface Employee {
   pay(): void;
 }

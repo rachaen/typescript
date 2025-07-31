@@ -1,6 +1,6 @@
 {
   // abstract로 만들어진 클래스는 자체로 object를 생성할 수 없다.
-  //  abstract 클래스를 구현하는 클래스마다 달라져야하는 내용이 있다면 그 부분만 abstract method로 구현할 수 있다.(protected로 해야 함)
+  // abstract 클래스를 구현하는 클래스마다 달라져야하는 내용이 있다면 그 부분만 abstract method로 구현할 수 있다.(protected로 해야 함. 자식 클래스에서는 접근할 수 있어야하기 때문 + 구현사항은 없어야 함)
   type CoffeeCup = {
     shots: number;
     hasMilk?: boolean;

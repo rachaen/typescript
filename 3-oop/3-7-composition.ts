@@ -10,7 +10,7 @@
    * Favor COMPOSITION over inheritance: 상속대신에 composition을 선호하라!
    * composition: 필요한 것을 가져와서 조립해나가는 것
    *
-   * be coupling원칙: 클래스들 간 상호작용을 하는 경우 클래스를 노출하는 것이 아니라 계약서를 통해서(interface) 상호작용하는 것이 좋다
+   * decoupling원칙: 클래스들 간 상호작용을 하는 경우 클래스를 노출하는 것이 아니라 계약서를 통해서(interface) 상호작용하는 것이 좋다
    */
 
   type CoffeeCup = {
