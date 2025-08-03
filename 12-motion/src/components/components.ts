@@ -6,7 +6,7 @@ export interface Component {
  * Encapsulate the HTML element creation
  */
 export class BaseComponent<T extends HTMLElement> implements Component{
-  protected readonly element: T;
+  readonly element: T;
 
   constructor(htmlString: string) {
     const template = document.createElement('template');

@@ -16,3 +16,4 @@ export class ImageComponent extends BaseComponent<HTMLElement> {
     titleElement.textContent = title;
   }
 }
+// https://youtu.be/Wxao0mu9VLM
